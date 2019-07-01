@@ -35,21 +35,16 @@ public class MainActivity extends AppCompatActivity {
          */
         @SerializedName("id")
         private int id;
-        @SerializedName("name")
-        private String name;
-        @SerializedName("propellant")
-        private String propellant;
-        @SerializedName("imageurl")
-        private String imageURL;
-        @SerializedName("technologyexists")
-        private int technologyExists;
+        @SerializedName("nama")
+        private String nama;
+        @SerializedName("foto")
+        private String foto;
 
-        public Spacecraft(int id, String name, String propellant, String imageURL, int technologyExists) {
+
+        public Spacecraft(int id, String nama, String imageURL) {
             this.id = id;
-            this.name = name;
-            this.propellant = propellant;
-            this.imageURL = imageURL;
-            this.technologyExists = technologyExists;
+            this.nama = nama;
+            this.foto = foto;
         }
 
         /*
@@ -62,35 +57,29 @@ public class MainActivity extends AppCompatActivity {
             this.id = id;
         }
         public String getName() {
-            return name;
+            return nama;
         }
         public void setName(String name) {
-            this.name = name;
-        }
-        public String getPropellant() {
-            return propellant;
+            this.nama = name;
         }
 
         public String getImageURL() {
-            return imageURL;
+            return foto;
         }
 
-        public int getTechnologyExists() {
-            return technologyExists;
-        }
 
         /*
         TOSTRING
          */
         @Override
         public String toString() {
-            return name;
+            return nama;
         }
     }
 
     interface MyAPIService {
 
-        @GET("/Oclemy/SampleJSON/338d9585/spacecrafts.json")
+        @GET("https://api.myjson.com/bins/8zjjr")
         Call<List<Spacecraft>> getSpacecrafts();
     }
 
@@ -150,9 +139,7 @@ public class MainActivity extends AppCompatActivity {
             final Spacecraft thisSpacecraft= spacecrafts.get(position);
 
             nameTxt.setText(thisSpacecraft.getName());
-            txtPropellant.setText(thisSpacecraft.getPropellant());
-            chkTechExists.setChecked( thisSpacecraft.getTechnologyExists()==1);
-            chkTechExists.setEnabled(false);
+
 
             if(thisSpacecraft.getImageURL() != null && thisSpacecraft.getImageURL().length()>0)
             {
