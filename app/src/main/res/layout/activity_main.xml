@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@drawable/imgae"
     >
 
     <TextView
@@ -30,8 +29,6 @@
 
     <ListView
         android:id="@+id/mListView"
-        android:layout_weight="0.5"
-        android:numColumns="auto_fit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -13,8 +13,8 @@
 
     </style>
 
-    <style name="MyCustomMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="windowNoTitle">true</item>
+    <style name="MyCustomMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">false</item>
         <item name="windowActionBar">true</item>
         <item name="colorPrimary">@color/navigationBarColor</item>
         <item name="colorPrimaryDark">@color/navigationBarColor</item>
