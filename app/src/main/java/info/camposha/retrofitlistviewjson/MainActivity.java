@@ -132,8 +132,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             TextView nameTxt = view.findViewById(R.id.nameTextView);
-            TextView txtPropellant = view.findViewById(R.id.propellantTextView);
-            CheckBox chkTechExists = view.findViewById(R.id.myCheckBox);
+
             ImageView spacecraftImageView = view.findViewById(R.id.spacecraftImageView);
 
             final Spacecraft thisSpacecraft= spacecrafts.get(position);
