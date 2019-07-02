@@ -30,9 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     class Spacecraft {
-        /*
-        INSTANCE FIELDS
-         */
+
         @SerializedName("id")
         private int id;
         @SerializedName("nama")
@@ -47,9 +45,7 @@ public class MainActivity extends AppCompatActivity {
             this.foto = foto;
         }
 
-        /*
-         *GETTERS AND SETTERS
-         */
+
         public int getId() {
             return id;
         }
@@ -68,9 +64,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        /*
-        TOSTRING
-         */
+
         @Override
         public String toString() {
             return nama;
