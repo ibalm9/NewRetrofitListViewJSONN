@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg1"
+
     >
 
     <ImageView
 
-        android:layout_height="208dp"
-        android:layout_width="208dp"
+        android:layout_height="244dp"
+        android:layout_width="244dp"
         android:src="@drawable/hi_png"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+
 
         ></ImageView>
 
-</LinearLayout>
+</RelativeLayout>
