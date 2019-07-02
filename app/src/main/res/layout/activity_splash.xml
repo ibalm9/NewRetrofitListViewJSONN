@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bege">
+    android:background="@drawable/bg1"
+    >
 
     <ImageView
 
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:src="@drawable/logo"
+        android:layout_height="208dp"
+        android:layout_width="208dp"
+        android:src="@drawable/hi_png"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
 
