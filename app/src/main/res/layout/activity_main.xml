@@ -20,13 +20,15 @@
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="52dp"
+            android:layout_below="@+id/mListView"
+            android:layout_alignBottom="@id/mListView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             app:itemBackground="@color/navigationBarColor"
             app:itemIconTint="@android:color/white"
             app:itemTextColor="@android:color/white"
-            app:menu="@menu/bottom_nav_menu"
-            android:layout_alignParentBottom="true"
-            android:layout_alignBottom="@id/mListView"
-            />
+            app:menu="@menu/bottom_nav_menu" />
 
         <TextView
             android:id="@+id/headerTxt"
@@ -53,7 +55,7 @@
         <ListView
             android:id="@+id/mListView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="668dp"
 
             />
 
