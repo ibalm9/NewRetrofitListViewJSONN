@@ -12,12 +12,24 @@ public class Spacecraft {
         private String nama;
         @SerializedName("foto")
         private String foto;
+        @SerializedName("year")
+        private int year;
+        @SerializedName("club")
+        private String club;
+        @SerializedName("foot")
+        private String foot;
+        @SerializedName("deskripsi")
+         private String deskripsi;
 
 
-        public Spacecraft(int id, String nama, String imageURL) {
+        public Spacecraft(int id, String nama, String imageURL, String year, String club, String foot, String deskripsi) {
             this.id = id;
             this.nama = nama;
             this.foto = foto;
+
+            this.club = club;
+            this.foot = foot;
+            this.deskripsi = deskripsi;
         }
 
 
@@ -33,10 +45,19 @@ public class Spacecraft {
         public void setName(String name) {
             this.nama = name;
         }
-
         public String getImageURL() {
             return foto;
         }
+
+        public String getClub() {
+        return club;
+    }
+        public String getFoot() {
+        return foot;
+    }
+        public String getDeskripsi() {
+        return deskripsi;
+    }
 
 
 

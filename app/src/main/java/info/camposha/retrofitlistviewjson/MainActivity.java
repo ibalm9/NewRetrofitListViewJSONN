@@ -17,7 +17,6 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     private ListViewAdapter adapter;
     private ListView mListView;
-    ProgressBar myProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

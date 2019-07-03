@@ -51,9 +51,22 @@ public class ListViewAdapter extends BaseAdapter {
 
             ImageView spacecraftImageView = view.findViewById(R.id.spacecraftImageView);
 
+
+
+            TextView clubTxt = view.findViewById(R.id.club);
+
+            TextView footTxt = view.findViewById(R.id.foot);
+
+            TextView deskripsiTxt = view.findViewById(R.id.deskripsi);
+
             final Spacecraft thisSpacecraft= spacecrafts.get(position);
 
             nameTxt.setText(thisSpacecraft.getName());
+
+            clubTxt.setText(thisSpacecraft.getClub());
+            footTxt.setText(thisSpacecraft.getFoot());
+            deskripsiTxt.setText(thisSpacecraft.getDeskripsi());
+
 
 
             if(thisSpacecraft.getImageURL() != null && thisSpacecraft.getImageURL().length()>0)
