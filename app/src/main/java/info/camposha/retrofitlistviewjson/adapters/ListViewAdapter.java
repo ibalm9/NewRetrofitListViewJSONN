@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+import com.uncopt.android.widget.text.justify.JustifiedTextView;
 
 import java.util.List;
 import info.camposha.retrofitlistviewjson.R;
@@ -57,14 +58,14 @@ public class ListViewAdapter extends BaseAdapter {
 
             TextView footTxt = view.findViewById(R.id.foot);
 
-            TextView deskripsiTxt = view.findViewById(R.id.deskripsi);
+            JustifiedTextView deskripsiTxt = view.findViewById(R.id.deskripsi);
 
             final Spacecraft thisSpacecraft= spacecrafts.get(position);
 
             nameTxt.setText(thisSpacecraft.getName());
 
-            clubTxt.setText(thisSpacecraft.getClub());
-            footTxt.setText(thisSpacecraft.getFoot());
+            clubTxt.setText("Klub Bermain:" + thisSpacecraft.getClub());
+            footTxt.setText("Kaki dominan :" +thisSpacecraft.getFoot());
             deskripsiTxt.setText(thisSpacecraft.getDeskripsi());
 
 

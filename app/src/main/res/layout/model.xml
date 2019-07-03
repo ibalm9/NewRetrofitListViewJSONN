@@ -23,7 +23,10 @@
                 android:src="@drawable/placeholder"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_horizontal"
                 />
+
 
 
         </FrameLayout>
@@ -31,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="16dp"
+            android:paddingLeft="12dp"
             >
         <TextView
             android:id="@+id/nameTextView"
@@ -46,21 +49,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Club"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+
+            />
 
         <TextView
             android:id="@+id/foot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dominan Foot"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            />
+
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
             android:id="@+id/deskripsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Description"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:scrollbars="vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            />
         </LinearLayout>
     </LinearLayout>
 
