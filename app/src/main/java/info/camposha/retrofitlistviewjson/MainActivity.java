@@ -67,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_recents:
-                        Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Klik Menu", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_favorites:
-                        Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Klik Home", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_nearby:
-                        Toast.makeText(MainActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Klik Akun", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return true;

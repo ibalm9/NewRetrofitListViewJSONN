@@ -45,7 +45,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
 android:layout_marginTop="160dp"
-            android:layout_marginLeft="12dp"
             >
         <TextView
             android:id="@+id/nameTextView"
