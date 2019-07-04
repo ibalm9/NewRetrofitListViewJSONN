@@ -6,11 +6,11 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import java.util.List;
-
 import info.camposha.retrofitlistviewjson.adapters.ListViewAdapter;
 import info.camposha.retrofitlistviewjson.models.Spacecraft;
 import info.camposha.retrofitlistviewjson.services.APIServices;
@@ -25,6 +25,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
     private ListViewAdapter adapter;
@@ -127,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ListViewAdapter(this,spacecraftList);
         mListView.setAdapter(adapter);
     }
+
 
 
 }
