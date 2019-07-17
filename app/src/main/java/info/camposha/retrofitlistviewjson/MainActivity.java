@@ -129,7 +129,4 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ListViewAdapter(this,spacecraftList);
         mListView.setAdapter(adapter);
     }
-
-
-
 }
